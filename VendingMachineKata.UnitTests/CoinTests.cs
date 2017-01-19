@@ -3,7 +3,7 @@
 namespace VendingMachineKata.UnitTests
 {
     [TestFixture]
-    public class CoinTest
+    public class CoinTests
     {
         [Test]
         public void DetermineValueOfQuarter()

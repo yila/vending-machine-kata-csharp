@@ -32,7 +32,7 @@ namespace VendingMachineKata.UnitTests
             
             var displayMessage = testObject.DisplayMessage();
 
-            Assert.That(displayMessage, Is.EqualTo("75 cents"));
+            Assert.That(displayMessage, Is.EqualTo("$0.75"));
         }
 
     }

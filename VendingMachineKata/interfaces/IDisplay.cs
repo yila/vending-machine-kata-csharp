@@ -2,6 +2,6 @@
 {
     public interface IDisplay
     {
-        string DisplayAmount(int cents);
+        string DisplayAmount(int amount);
     }
 }
