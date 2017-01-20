@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachineKata.UnitTest
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachineKata", "VendingMachineKata\VendingMachineKata.csproj", "{912E8E93-CCF5-4F22-9DF9-2F5D19F9BAE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VendingMachineKata.FunctionalTests", "VendingMachineKata.FunctionalTests\VendingMachineKata.FunctionalTests.csproj", "{4C60F6DF-4557-48E7-A5B3-7488CD9E1CCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{912E8E93-CCF5-4F22-9DF9-2F5D19F9BAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{912E8E93-CCF5-4F22-9DF9-2F5D19F9BAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{912E8E93-CCF5-4F22-9DF9-2F5D19F9BAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C60F6DF-4557-48E7-A5B3-7488CD9E1CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C60F6DF-4557-48E7-A5B3-7488CD9E1CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C60F6DF-4557-48E7-A5B3-7488CD9E1CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C60F6DF-4557-48E7-A5B3-7488CD9E1CCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

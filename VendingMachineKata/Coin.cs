@@ -1,4 +1,6 @@
-﻿namespace VendingMachineKata
+﻿using System;
+
+namespace VendingMachineKata
 {
     public class Coin
     {
@@ -32,6 +34,11 @@
         {
             Coin coinToCompare = (Coin)obj;
             return WeightInGrams == coinToCompare.WeightInGrams && DiameterInMilliMeter == coinToCompare.DiameterInMilliMeter;
+        }
+
+        public static implicit operator int(Coin v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
