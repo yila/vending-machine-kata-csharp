@@ -17,5 +17,37 @@ namespace VendingMachineKata.UnitTests
 
             Assert.That(testObject.TotalAmount, Is.EqualTo(40));
         }
+
+        [Test]
+        public void CoinAcceptorShouldAcceptValidCoin_Quarter()
+        {
+            var testObject = new CoinAcceptor();
+
+            Assert.That(testObject.AcceptCoin(CoinFactory.Quarter()), Is.EqualTo(true));
+        }
+
+        [Test]
+        public void CoinAcceptorShouldAcceptValidCoin_Nickel()
+        {
+            var testObject = new CoinAcceptor();
+
+            Assert.That(testObject.AcceptCoin(CoinFactory.Nickel()), Is.EqualTo(true));
+        }
+
+        [Test]
+        public void CoinAcceptorShouldAcceptValidCoin_Dime()
+        {
+            var testObject = new CoinAcceptor();
+
+            Assert.That(testObject.AcceptCoin(CoinFactory.Dime()), Is.EqualTo(true));
+        }
+
+        [Test]
+        public void CoinAcceptorShouldRejectAnInvalidCoin_Penny()
+        {
+            var testObject = new CoinAcceptor();
+
+            Assert.That(testObject.AcceptCoin(CoinFactory.Penny()), Is.EqualTo(false));
+        }
     }
 }

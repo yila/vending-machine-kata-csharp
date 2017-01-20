@@ -39,5 +39,14 @@ namespace VendingMachineKata.UnitTests
             Assert.That(testObject.Value(), Is.EqualTo(1));
         }
 
+        [Test]
+        public void ImplementEquals()
+        {
+            var penny = CoinFactory.Penny();
+            var anotherPenny = CoinFactory.Penny();
+
+            Assert.That(penny, Is.EqualTo(anotherPenny));
+        }
+
     }
 }

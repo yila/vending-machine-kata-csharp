@@ -27,5 +27,11 @@
             }
             return 0;
         }
+
+        public override bool Equals(object obj)
+        {
+            Coin coinToCompare = (Coin)obj;
+            return WeightInGrams == coinToCompare.WeightInGrams && DiameterInMilliMeter == coinToCompare.DiameterInMilliMeter;
+        }
     }
 }

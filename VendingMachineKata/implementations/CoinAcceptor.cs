@@ -6,9 +6,10 @@ namespace VendingMachineKata.implementations
     {
         public int TotalAmount { get; set; }
 
-        public void AcceptCoin(Coin coin)
+        public bool AcceptCoin(Coin coin)
         {
             TotalAmount += coin.Value();
+            return !coin.Equals(CoinFactory.Penny());
         }
     }
 }
