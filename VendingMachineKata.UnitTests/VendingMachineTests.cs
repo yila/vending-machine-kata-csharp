@@ -23,9 +23,9 @@ namespace VendingMachineKata.UnitTests
         public void VendingMachineShouldDisplayTheTotalWhenMultipleCoinsAreInserted()
         {
             var coinAcceptor = new CoinAcceptor();
-            coinAcceptor.AcceptCoin(new Coin { WeightInGrams = 5.67, DiameterInMilliMeter = 24.26});
-            coinAcceptor.AcceptCoin(new Coin { WeightInGrams = 5.67, DiameterInMilliMeter = 24.26 });
-            coinAcceptor.AcceptCoin(new Coin { WeightInGrams = 5.67, DiameterInMilliMeter = 24.26 });
+            coinAcceptor.AcceptCoin(CoinFactory.Quarter());
+            coinAcceptor.AcceptCoin(CoinFactory.Quarter());
+            coinAcceptor.AcceptCoin(CoinFactory.Quarter());
             var displayPanel = new DisplayPanel();
 
             var testObject = new VendingMachine(coinAcceptor, displayPanel);
