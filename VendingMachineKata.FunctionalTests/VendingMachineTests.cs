@@ -8,7 +8,7 @@ namespace VendingMachineKata.FunctionalTests
     public class VendingMachineTests
     {
         [Test]
-        public void VendingMachineShouldDisplayDefaultMessageWhen()
+        public void VendingMachineShouldDisplayDefaultMessageWhenThereAreNoCoinsInserted()
         {
             var coinAcceptor = new CoinAcceptor();
             var displayPanel = new DisplayPanel();
